@@ -1,4 +1,4 @@
-### ToDo List
+## ToDo List
 
 ### Project's Purpose:
 This web application will help users keep track of their daily tasks and help users become more time efficient.
