@@ -1,4 +1,29 @@
+### ToDo List
+
+### Project's Purpose:
+This web application will help users keep track of their daily tasks and help users become more time efficient.
+
+### MVPS:
+* Working Todo List
+* Login system
+* Styling
+
+### Tools Used
+* React
+* MySQL
+* Bootstrap
+* JSX
+
+### Reach Goals
+* Implementing a Pomodoro Timer
+* Implementing a calandar of some sort to keep track of individual days
+
+### Tools Needed for Reach Goals
+* APIs 
+
+
 ### Research & Planning Log
+
 #### 8/27/2023
 
 * 12:00: Watched videos on React and went through LHTP lessons to brush up.
