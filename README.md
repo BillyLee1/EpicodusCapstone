@@ -6,3 +6,5 @@
 * 2:00: Went over my MVPS 
 * 2:15: Looked through Youtube tutorials on how to lay out a todo list.
 * 2:50: Researched how to make a clock with React
+* 3:30: Researched Wireframes
+* 4:05: Layed out my project so my project goes smoothly
