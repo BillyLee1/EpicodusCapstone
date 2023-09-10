@@ -33,3 +33,10 @@ This web application will help users keep track of their daily tasks and help us
 * 2:50: Researched how to make a clock with React
 * 3:30: Researched Wireframes
 * 4:05: Layed out my project so my project goes smoothly
+
+
+#### 9/9/2023
+
+* 9:25: Laid out my project again to make sure I had MVPs sorted out.
+* 9:55: Watched more Youtube videos to learn about React/ todo lists
+* 10:45: Started on working on basic code for Todo list.
