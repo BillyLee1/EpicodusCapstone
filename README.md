@@ -46,3 +46,5 @@ This web application will help users keep track of their daily tasks and help us
 #### 9/23/2023
 
 * 9:30: Researching how to style React and bootstrap.
+* 11:00 Planning out final wireframe and thinking of refactoring project
+* 1:00: Researching good styling techniques and how to make a timer

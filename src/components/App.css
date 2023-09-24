@@ -13,7 +13,7 @@ body {
 }
 
 .toDoListContainer {
-  background: #1A1A40;
+  background: #1a4025;
   margin-top: 5rem;
   padding: 2rem;
   border-radius: 5px;
@@ -22,4 +22,13 @@ body {
 .todo-form {
   width: 100%;
   margin-bottom: 1rem;
+}
+
+.toDoItem {
+  color: white;
+}
+
+.todo-icon-wrapper {
+  display: flex;
+  flex-direction: column;
 }

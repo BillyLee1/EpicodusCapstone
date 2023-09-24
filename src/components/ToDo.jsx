@@ -22,23 +22,25 @@ function ToDo({todos, completeTodo, removeToDo, updateToDo}) {
   }
 
   return todos.map((todo, index) => (
-    <div className={
-      todo.isComplete ? 'todo-row complete' : 'todo-row'} 
-      key={index}>
-      
-      <div key={todo.id} onClick={() => completeTodo(todo.id)}>
-        {todo.text}
-      </div>
-      
-      <div className="icons">
-        <RiCloseCircleLine 
-        onClick={() => removeToDo(todo.id)}
-        className='delete'
-        />
-        <TiEdit 
-          onClick={() => setEdit({id: todo.id, value: todo.text})}
-          className='edit'
-        />
+    <div className="todo-icon-wrapper">
+      <div className={
+        todo.isComplete ? 'todo-row complete' : 'todo-row'} 
+        key={index}>
+        
+        <div className="toDoItem" key={todo.id} onClick={() => completeTodo(todo.id)}>
+          {todo.text}
+        </div>
+        
+        <div className="icons">
+          <RiCloseCircleLine 
+          onClick={() => removeToDo(todo.id)}
+          className='delete'
+          />
+          <TiEdit 
+            onClick={() => setEdit({id: todo.id, value: todo.text})}
+            className='edit'
+          />
+        </div>
       </div>
     </div>
   ))
