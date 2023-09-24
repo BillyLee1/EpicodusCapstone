@@ -3,12 +3,23 @@ import ToDoForm from './ToDoForm';
 import { RiCloseCircleLine } from 'react-icons/ri';
 import { TiEdit } from 'react-icons/ti';
 
-function ToDo({todos, completeTodo, removeToDo}) {
+function ToDo({todos, completeTodo, removeToDo, updateToDo}) {
   const [edit, setEdit] = useState({
     id: null,
     value: ''
   })
 
+  const submitUpdate = value => {
+    updateToDo(edit.id, value)
+    setEdit({
+      id: null,
+      value: ""
+    })
+  }
+
+  if (edit.id) {
+    return <ToDoForm edit={edit} onSubmit={submitUpdate} />
+  }
 
   return todos.map((todo, index) => (
     <div className={
