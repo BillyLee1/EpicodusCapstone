@@ -41,3 +41,8 @@ This web application will help users keep track of their daily tasks and help us
 * 9:55: Watched more Youtube videos to learn about React/ todo lists
 * 10:45: Started on working on basic code for Todo list.
 * 12:30: Researched on Google and Youtube on React topics.
+
+
+#### 9/23/2023
+
+* 9:30: Researching how to style React and bootstrap.

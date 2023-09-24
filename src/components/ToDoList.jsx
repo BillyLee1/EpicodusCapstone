@@ -40,7 +40,7 @@ function ToDoList() {
   }
 
   return (
-    <div>To Do List
+    <div>
       <ToDoForm onSubmit={addTodo} />
       <ToDo 
         todos={todos}
