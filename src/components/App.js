@@ -1,7 +1,8 @@
 import './App.css';
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import { TodoForm } from "./TodoForm"
 import { TodoList } from "./TodoList"
+import CountdownTimer from './Pomodoro/CountDownTimer';
 
 export default function App() {
   const [todos, setTodos] = useState([])
@@ -41,6 +42,7 @@ export default function App() {
       <TodoForm addTodo={addTodo}/>
       <h1>Todo List!</h1>
       <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo}/>
+      <CountdownTimer />
     </>
   );
 }
