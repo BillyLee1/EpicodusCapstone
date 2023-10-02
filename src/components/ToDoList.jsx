@@ -1,19 +1,20 @@
 import React from "react";
+import { Todo } from "./Todo"
 
-export function TodoList() {
-
+export function TodoList({ todos, toggleTodo, deleteTodo }) {
   return (
-    <div className="todoListWrapper">
-      <ul>
-        <li>
-          <h3>Todo 1</h3>
-        </li>
-        
-        <li>
-        <h3>Todo 1</h3>
-        </li>
-      </ul>
-    </div>
+    <ul className="list">
+      {todos.length === 0 && "No Todos"}
+      {todos.map(todo => {
+        return (
+          <Todo 
+            {...todo}
+            toggleTodo={toggleTodo}
+            deleteTodo={deleteTodo}
+            key={todo.id}
+          />
+        )
+      })}
+    </ul>
   )
-
 }
