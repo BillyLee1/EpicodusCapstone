@@ -13,7 +13,7 @@ const green = '#4aec8c';
 function Timer() {
   const settingsInfo = useContext(SettingsContext);
 
-  const [isPaused, setIsPaused] = useState(false);
+  const [isPaused, setIsPaused] = useState(true);
   const [secondsLeft, setSecondsLeft] = useState(0);
   const [mode, setMode] = useState('work');
 
