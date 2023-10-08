@@ -3,9 +3,38 @@
 ### Project's Purpose:
 This web application will help users keep track of their daily tasks and help users become more time efficient.
 
+## Technologies Used
+
+
+* _JSX_
+* _React_
+* _VSCode_
+* _Bootstrap_
+* _CSS_
+
+## Description
+_This web application will help users keep track of their daily tasks and help users become more time efficient. This application also offers a pomodoro timer that will help with productivity and optimal learning._
+
+## Setup/Installation Requirements
+
+* _Visit the repository this project is located in._
+* _Press the green code button and copy and the HTTPS link that ends with .git_
+* _Open up your gitbash and change the directory to where you want to clone this repository._
+* _in gitbash, type "git clone https://github.com/BillyLee1/EpicodusCapstone.git _
+* _Open the project folder in VS Code by typing "code ." into gitbash_
+* _Type "npm install" into gitbash to install all node modules_
+* _Type "npm run start" into git bash to open up the live server_
+
+## License
+
+_Please let me know if you see any bugs within this project. You can contact me through Discord or email me at codingbillylee@gmail.com_
+
+[Copyright](https://opensource.org/licenses/MIT) (c) _2023_ _Billy Lee_
+
+
 ### MVPS:
 * Working Todo List
-* Login system
+* Pomodoro Timer
 * Styling
 
 ### Tools Used
@@ -15,11 +44,7 @@ This web application will help users keep track of their daily tasks and help us
 * JSX
 
 ### Reach Goals
-* Implementing a Pomodoro Timer
 * Implementing a calandar of some sort to keep track of individual days
-
-### Tools Needed for Reach Goals
-* APIs 
 
 
 ### Research & Planning Log

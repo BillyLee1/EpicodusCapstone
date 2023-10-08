@@ -10,11 +10,78 @@ body{
 
 main{
   padding-top: 50px;
-  max-width: 400px;
+  max-width: 1000px;
   margin: 0 auto;
   text-align: center;
 
 }
+
+ul {
+  list-style-type: none;
+}
+
+.searchBar{
+  width: 700px;
+  border: 1px solid white;
+  border-radius: 20px;
+  text-indent:10px;
+}
+
+.newTodoForm {
+  padding-bottom: 30px;
+}
+
+.addButton {
+  margin-left: 15px;
+}
+
+.todolistWrapper {
+  padding-top: 30px;
+}
+
+.list {
+  text-align: left;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.table th {
+  background-color: #30384b;
+  /* border: 2px solid white; */
+  padding-left: 60px;
+  padding-bottom: 30px;
+  box-shadow: 0.75px 0.75px 5px white;
+}
+
+label {
+  color: white
+}
+
+label input {
+  margin: 10px;
+}
+
+
+.timerWrapper {
+  max-width: 250px;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.settingsWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 
 .playButton {
   background-color: transparent;
@@ -44,4 +111,31 @@ label{
   margin-bottom: 10px;
   margin-top: 20px;
   text-transform: capitalize;
+}
+
+.labelWrapper {
+  width: 800px;
+}
+
+.deleteButton {
+  float: right;
+}
+
+input[type='checkbox'] {
+
+  width:15px;
+  height:15px;
+  background:white;
+  border-radius:5px;
+  border:2px solid #555;
+}
+
+.pomodoroTitle {
+  padding: 20px;
+  font-size: 20px;
+}
+
+.fixed-top {
+  position: fixed;
+  height: 35px;
 }

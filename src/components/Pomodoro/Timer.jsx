@@ -76,16 +76,18 @@ function Timer() {
         pathColor:mode === 'work' ? red : green,
         tailColor:'rgba(255,255,255,.2)',
       })}  />
-
-      <div style={{marginTop:'20px'}}>
-        {isPaused ? <PlayButton onClick={() => { setIsPaused(false); isPausedRef.current = false;}}/> : 
-        <PauseButton onClick={() => { setIsPaused(true); isPausedRef.current = true; }}/>}
-      </div>
-
-      <div style={{marginTop:'20px'}}>
-        <SettingsButton onClick={() => settingsInfo.setShowSettings(true)
-
-        }/>
+      <div className="settingsWrapper">
+        <div className="settingsButtons">
+          <div style={{marginTop:'20px'}}>
+            {isPaused ? <PlayButton onClick={() => { setIsPaused(false); isPausedRef.current = false;}}/> : 
+            <PauseButton onClick={() => { setIsPaused(true); isPausedRef.current = true; }}/>}
+          </div>
+        </div>
+        <div className="settingsButtons">
+          <div style={{marginTop:'35px'}}>
+            <SettingsButton onClick={() => settingsInfo.setShowSettings(true)}/>
+          </div>
+        </div>
       </div>
     </div>
   )

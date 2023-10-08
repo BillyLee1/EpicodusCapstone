@@ -1,10 +1,13 @@
-import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css"
 import { useEffect, useState } from "react"
 import { TodoForm } from "./TodoForm"
 import { TodoList } from "./TodoList"
 import Timer from './Pomodoro/Timer';
 import SettingsPage from './Pomodoro/SettingsPage';
 import SettingsContext from './Pomodoro/SettingsContext';
+import TodoNav from "./TodoNav";
+
 
 export default function App() {
   const [todos, setTodos] = useState(() => {
@@ -15,8 +18,8 @@ export default function App() {
   })
 
   const [showSettings, setShowSettings] = useState(false);
-  const [workMinutes, setWorkMinutes] = useState(45);
-  const [breakMinutes, setBreakMinutes] = useState(45);
+  const [workMinutes, setWorkMinutes] = useState(15);
+  const [breakMinutes, setBreakMinutes] = useState(5);
   
   useEffect(() => {
     localStorage.setItem("ITEMS", JSON.stringify(todos))
@@ -56,22 +59,24 @@ export default function App() {
   return (
     <>
       <main>
-        <h1>Todos for today </h1>
-        <TodoForm addTodo={addTodo}/>
-        <h1>Todo List!</h1>
-        <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo}/>
 
-        <SettingsContext.Provider value={{
-          showSettings,
-          setShowSettings,
-          workMinutes,
-          breakMinutes,
-          setWorkMinutes,
-          setBreakMinutes,
-        }}>
-          {showSettings ? <SettingsPage /> : <Timer />}
-        </SettingsContext.Provider>
-        
+        <h1>Billy's Productivity Planner</h1>
+        <TodoForm addTodo={addTodo}/>
+        <div className='timerWrapper'>
+          <div className="pomodoroTitle">Pomodoro Timer</div>
+          <SettingsContext.Provider value={{
+            showSettings,
+            setShowSettings,
+            workMinutes,
+            breakMinutes,
+            setWorkMinutes,
+            setBreakMinutes,
+          }}>
+            {showSettings ? <SettingsPage /> : <Timer />}
+          </SettingsContext.Provider>
+        </div>
+        <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo}/>
+        <TodoNav />
       </main>
     </>
   );
