@@ -29,6 +29,10 @@ _This web application will help users keep track of their daily tasks and help u
 
 _Please let me know if you see any bugs within this project. You can contact me through Discord or email me at codingbillylee@gmail.com_
 
+## Known Bugs
+* _Timer resets if Todos are updated_
+
+
 [Copyright](https://opensource.org/licenses/MIT) (c) _2023_ _Billy Lee_
 
 
